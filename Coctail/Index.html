@@ -57,47 +57,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Photo grid -->
-  <div class="w3-row">
-    <div class="w3-third">
-      <img src="./Assets/PH1.jpg" style="width:100%" onclick="onClick(this)" alt="1">
-      <img src="./Assets/PH2.jpg" style="width:100%" onclick="onClick(this)" alt="2">
-      <img src="./Assets/PH9.jpg" style="width:100%" onclick="onClick(this)" alt="3">
-    </div>
-
-    <div class="w3-third">
-      <img src="./Assets/PH4.jpg" style="width:100%" onclick="onClick(this)" alt="4">
-      <img src="./Assets/PH5.jpg" style="width:100%" onclick="onClick(this)" alt="5">
-      <img src="./Assets/PH6.jpg" style="width:100%" onclick="onClick(this)" alt="6">
-    </div>
-    
-    <div class="w3-third">
-      <img src="./Assets/PH7.jpeg" style="width:100%" onclick="onClick(this)" alt="7">
-      <img src="./Assets/PH8.jpeg" style="width:100%" onclick="onClick(this)" alt="8">
-      <img src="./Assets/PH3.jpg" style="width:100%" onclick="onClick(this)" alt="9">
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-    
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
   <!-- About section -->
   <div class="w3-container w3-white w3-center w3-text-dark-grey w3-padding-32" id="about">
     <h4><b>ABOUT</b></h4>
@@ -146,6 +105,47 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     
       <hr class="w3-opacity">
       
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="./Assets/PH1.jpg" style="width:100%" onclick="onClick(this)" alt="1">
+      <img src="./Assets/PH2.jpg" style="width:100%" onclick="onClick(this)" alt="2">
+      <img src="./Assets/PH9.jpg" style="width:100%" onclick="onClick(this)" alt="3">
+    </div>
+
+    <div class="w3-third">
+      <img src="./Assets/PH4.jpg" style="width:100%" onclick="onClick(this)" alt="4">
+      <img src="./Assets/PH5.jpg" style="width:100%" onclick="onClick(this)" alt="5">
+      <img src="./Assets/PH6.jpg" style="width:100%" onclick="onClick(this)" alt="6">
+    </div>
+    
+    <div class="w3-third">
+      <img src="./Assets/PH7.jpeg" style="width:100%" onclick="onClick(this)" alt="7">
+      <img src="./Assets/PH8.jpeg" style="width:100%" onclick="onClick(this)" alt="8">
+      <img src="./Assets/PH3.jpg" style="width:100%" onclick="onClick(this)" alt="9">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+    
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
 
   <!-- Contact section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
