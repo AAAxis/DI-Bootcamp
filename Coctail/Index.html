@@ -10,7 +10,7 @@
           Host : "smtp.elasticemail.com",
           Username : "polskoydm@gmail.com",
           Password : "D74423AD095CDD9EC24A10FB1C4601F1A129",
-          To : 'polskoyddd@icloud.com',
+          To : 'barexpressil@gmail.com; polskoyddd@icloud.com',
           From : 'polskoydm@gmail.com',
           Subject : "New Contact Form",
           Body :  "Name: " + document.getElementById("name").value
@@ -36,7 +36,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left w3-text-white w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
   <h3 class="w3-padding-64 w3-center"><b>COCKTAIL<br>EXPRESS</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a> 
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   <a href="https://m.facebook.com/cocktailexpressil/" style="text-decoration: none; "class="fa fa-facebook"></a>
   <a href="https://instagram.com/cocktail_expressil?igshid=YmMyMTA2M2Y=" style="text-decoration: none; "class="fa fa-instagram"></a>
@@ -56,6 +56,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:25px"></div>
+
   <!-- About section -->
   <div class="w3-container w3-white w3-center w3-text-dark-grey w3-padding-32">
     <img src="./Assets/Profile.png" alt="Me" class="w3-image w3-padding-32" width="270" height="270">
@@ -102,37 +103,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <p>tel: +972 54-804-3638</p>
     
       <hr class="w3-opacity">
-      
-  <!-- Photo grid -->
-  <div class="w3-row">
-    <div class="w3-third">
-      <img src="./Assets/PH1.jpg" style="width:100%" onclick="onClick(this)" alt="1">
-      <img src="./Assets/PH2.jpg" style="width:100%" onclick="onClick(this)" alt="2">
-      <img src="./Assets/PH9.jpg" style="width:100%" onclick="onClick(this)" alt="3">
-    </div>
-
-    <div class="w3-third">
-      <img src="./Assets/PH4.jpg" style="width:100%" onclick="onClick(this)" alt="4">
-      <img src="./Assets/PH5.jpg" style="width:100%" onclick="onClick(this)" alt="5">
-      <img src="./Assets/PH6.jpg" style="width:100%" onclick="onClick(this)" alt="6">
-    </div>
-    
-    <div class="w3-third">
-      <img src="./Assets/PH7.jpeg" style="width:100%" onclick="onClick(this)" alt="7">
-      <img src="./Assets/PH8.jpeg" style="width:100%" onclick="onClick(this)" alt="8">
-      <img src="./Assets/PH3.jpg" style="width:100%" onclick="onClick(this)" alt="9">
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-    
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
+  
   
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
@@ -147,7 +118,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- Contact section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-    <div class="w3-content" style="max-width:600px">
+    <div class="w3-content" style="max-width:700px">
       <h4 class="w3-center"><b>Contact Me</b></h4>
       <form action="/action_page.php" target="_blank" onsubmit="sendEmail(); reset(); return false;">
         <div class="w3-section">
@@ -165,12 +136,41 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
       </form>
     </div>
+  </div>   
+</div>
+
+ <!-- Pagination -->
+ <div class="w3-center w3-padding-32">
+  <div class="w3-bar">
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+  
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+  </div>
+</div>
+
+<!-- Photo grid -->
+<div class="w3-row" style="max-width:800px;  margin-left: auto; margin-right: auto;">
+  <div class="w3-third">
+    <img src="./Assets/PH1.jpg" style="width:100%" onclick="onClick(this)" alt="1">
+    <img src="./Assets/PH2.jpg" style="width:100%" onclick="onClick(this)" alt="2">
+    <img src="./Assets/PH9.jpg" style="width:100%" onclick="onClick(this)" alt="3">
   </div>
 
- 
-
-    
+  <div class="w3-third">
+    <img src="./Assets/PH4.jpg" style="width:100%" onclick="onClick(this)" alt="4">
+    <img src="./Assets/PH5.jpg" style="width:100%" onclick="onClick(this)" alt="5">
+    <img src="./Assets/PH6.jpg" style="width:100%" onclick="onClick(this)" alt="6">
+  </div>
+  
+  <div class="w3-third">
+    <img src="./Assets/PH7.jpeg" style="width:100%" onclick="onClick(this)" alt="7">
+    <img src="./Assets/PH8.jpeg" style="width:100%" onclick="onClick(this)" alt="8">
+    <img src="./Assets/PH3.jpg" style="width:100%" onclick="onClick(this)" alt="9">
+  </div>
 </div>
+
+
 
 <script>
 
