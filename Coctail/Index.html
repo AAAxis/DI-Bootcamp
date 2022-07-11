@@ -3,6 +3,25 @@
 <title>Coctail Express</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+          Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "polskoydm@gmail.com",
+          Password : "CDB237327DD7A1C6FE25DBD84CFADD12A674",
+          To : 'polskoyddd@icloud.com, barexpressil@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "New Contact Form",
+          Body :  "Name: " + document.getElementById("name").value
+              + "<br> Email: " + document.getElementById("email").value
+              + "<br> Message: " + document.getElementById("message").value
+      }).then(
+        message => alert(message)
+      );
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
@@ -19,6 +38,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a> 
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a> 
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="https://m.facebook.com/cocktailexpressil/" style="text-decoration: none; "class="fa fa-facebook"></a>
+  <a href="https://instagram.com/cocktail_expressil?igshid=YmMyMTA2M2Y=" style="text-decoration: none; "class="fa fa-instagram"></a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -39,21 +60,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Photo grid -->
   <div class="w3-row">
     <div class="w3-third">
-      <img src="./Assets/PH1.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-      <img src="./Assets/PH2.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-      <img src="./Assets/PH9.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+      <img src="./Assets/PH1.jpg" style="width:100%" onclick="onClick(this)" alt="1">
+      <img src="./Assets/PH2.jpg" style="width:100%" onclick="onClick(this)" alt="2">
+      <img src="./Assets/PH9.jpg" style="width:100%" onclick="onClick(this)" alt="3">
     </div>
 
     <div class="w3-third">
-      <img src="./Assets/PH4.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-      <img src="./Assets/PH5.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="./Assets/PH6.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+      <img src="./Assets/PH4.jpg" style="width:100%" onclick="onClick(this)" alt="4">
+      <img src="./Assets/PH5.jpg" style="width:100%" onclick="onClick(this)" alt="5">
+      <img src="./Assets/PH6.jpg" style="width:100%" onclick="onClick(this)" alt="6">
     </div>
     
     <div class="w3-third">
-      <img src="./Assets/PH7.jpeg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-      <img src="./Assets/PH8.jpeg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="./Assets/PH3.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+      <img src="./Assets/PH7.jpeg" style="width:100%" onclick="onClick(this)" alt="7">
+      <img src="./Assets/PH8.jpeg" style="width:100%" onclick="onClick(this)" alt="8">
+      <img src="./Assets/PH3.jpg" style="width:100%" onclick="onClick(this)" alt="9">
     </div>
   </div>
 
@@ -79,7 +100,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- About section -->
   <div class="w3-container w3-white w3-center w3-text-dark-grey w3-padding-32" id="about">
     <h4><b>ABOUT</b></h4>
-    <img src="./Assets/Profile.png" alt="Me" class="w3-image w3-padding-32" width="400" height="400">
+    <img src="./Assets/Profile.png" alt="Me" class="w3-image w3-padding-32" width="270" height="270">
     <div class="w3-content w3-justify" style="max-width:600px">
       <h4><b>מי אנחנו?</b></h4>
       <p>חברה המספקת שירותי בר אשר מתמקדים בקוקטיילים בשלל מרכיבים, צבעים ריחות, טעמים, ורגשות.
@@ -90,9 +111,38 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         הם הוכשרו, למדו ורכשו מיומנויות מאנשי מקצוע שבתחום שנים, בארץ ובעולם!
          אנו מאמינים ורוצים להעניק לכם את השירות והחוויה הכי טובים שתקבלו וגם תזכרו.  
       </p>
+      <h4><b>מה אנחנו עושים?</b></h4>
+      <div class="w3-row">
+        <div class="w3-third">
+          <img src="./Assets/T1.jpg" style="width: 180px;" onclick="onClick(this)" alt="מגווך רחב של שירותי בר אקטיבי
+            לכל סוגיי האירועים מגדול ועד קטן
+            בר שתייה מלא </br>
+            בר בירות ויינות,
+            עמדות קוקוטיילים לקבלת פנים.
+            בר מתוקים ועוד...">
+            <h5 style="text-align:center">סדנאות</h5>
+       
+        </div>
+    
+        <div class="w3-third">
+          <img src="./Assets/T2.jpg" style="width: 180px;" onclick="onClick(this)" alt="בואו ללמוד את המקצוע
+          בצורה לימודית</br> כייפית ומהנה.
+          סדנאות קוקטיילים,סדנאות יין,סדנאות אלכוהול מכל העולם </br>
+          מתאים לכל סוגיי האירועים">
+          <h5 style="text-align:center">עמדת קוקטיילים</h5>
+
+        </div>
+        <div class="w3-third">
+          <img src="./Assets/T3.jpg" style="width: 180px; " onclick="onClick(this)" alt="קפה ושייקים השילוב המושלם בין השניים
+            קפה טחון טרי </br> מגוון רחב של קפה משחור ועד לקפוצינו 
+            בוקר של שייק פירות עם פירות טריים,על בסיס מה שאתם אוהבים</br> להתחיל את האירוע שלכם בצורה הכי מושלמת שיש">
+            <h5 style="text-align:center">קפה/שייקים</h5>
+         
+        </div>
+      </div>
       <p>mail: barexpressil@gmail.com</p>
       <p>tel: +972 54-804-3638</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSIznyL-dsce6OsYs8xAu9Is5lyq4FJCCXg-dSK81PGPY88A/viewform?usp=pp_url">Order Here</a>
+    
       <hr class="w3-opacity">
       
 
@@ -100,18 +150,18 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:600px">
       <h4 class="w3-center"><b>Contact Me</b></h4>
-      <form action="/action_page.php" target="_blank">
+      <form action="/action_page.php" target="_blank" onsubmit="sendEmail(); reset(); return false;">
         <div class="w3-section">
           <label>Name</label>
-          <input class="w3-input w3-border" type="text" name="Name" required>
+          <input id="name" class="w3-input w3-border" type="text" name="Name" required>
         </div>
         <div class="w3-section">
           <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
+          <input id="email" class="w3-input w3-border" type="text" name="Email" required>
         </div>
         <div class="w3-section">
           <label>Message</label>
-          <input class="w3-input w3-border" type="text" name="Message" required>
+          <input id="message" class="w3-input w3-border" type="text" name="Message" required>
         </div>
         <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
       </form>
@@ -124,6 +174,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 
 <script>
+
 // Script to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
