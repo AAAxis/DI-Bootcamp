@@ -4,23 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail() {
-          Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "polskoydm@gmail.com",
-          Password : "D74423AD095CDD9EC24A10FB1C4601F1A129",
-          To : 'barexpressil@gmail.com; polskoyddd@icloud.com',
-          From : 'polskoydm@gmail.com',
-          Subject : "New Contact Form",
-          Body :  "Name: " + document.getElementById("name").value
-              + "<br> Email: " + document.getElementById("email").value
-              + "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => alert(message)
-      );
-}
-</script>
+
 <link rel="icon" href="./Assets/Profile.png" type="image/icon type">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -73,26 +57,15 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
  
 
-<!-- Photo grid -->
-<div class="w3-row" style="max-width:90%;  margin-left: auto; margin-right: auto;">
-  <div class="w3-third">
-    <img src="./Assets/PH9.JPG" style="width:100%" onclick="onClick(this)" alt="1">
-    <img src="./Assets/PH1.JPG" style="width:100%" onclick="onClick(this)" alt="2">
-    <img src="./Assets/PH8.JPG" style="width:100%" onclick="onClick(this)" alt="3">
+  
+  <h2 class="w3-center">Automatic Slideshow</h2>
+
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides" src="./Assets/PH9.JPG" style="width:100%">
+    <img class="mySlides" src="./Assets/PH7.JPG" style="width:100%">
+    <img class="mySlides" src="./Assets/PH6.JPG" style="width:100%">
   </div>
 
-  <div class="w3-third">
-    <img src="./Assets/PH6.JPG" style="width:100%" onclick="onClick(this)" alt="4">
-    <img src="./Assets/PH3.JPG" style="width:100%" onclick="onClick(this)" alt="5">
-    <img src="./Assets/PH2.JPG" style="width:100%" onclick="onClick(this)" alt="6">
-  </div>
-  
-  <div class="w3-third">
-    <img src="./Assets/PH4.JPG" style="width:100%" onclick="onClick(this)" alt="7">
-    <img src="./Assets/PH7.JPG" style="width:100%" onclick="onClick(this)" alt="8">
-    <img src="./Assets/PH5.JPG" style="width:100%" onclick="onClick(this)" alt="9">
-  </div>
-</div>
 
 
 <!-- Pagination -->
@@ -100,11 +73,72 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar">
     <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
     <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+    <a href="#" class="w3-bar-item w3-white w3-button">2</a>
+    <a href="#" class="w3-bar-item w3-white w3-button">3</a>
   
     <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
   </div>
 </div>
 
+
+<!-- Photo grid -->
+<span>
+<div class="container">
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH1.JPG">
+    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH2.JPG">
+    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH8.JPG">
+    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH5.JPG">    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</span>  
+    
+    
+    
+    
+    
   <!-- Contact section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:700px">
