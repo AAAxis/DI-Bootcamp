@@ -4,34 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail() {
-          Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "polskoydm@gmail.com",
-          Password : "D74423AD095CDD9EC24A10FB1C4601F1A129",
-          To : 'barexpressil@gmail.com; polskoyddd@icloud.com',
-          From : 'polskoydm@gmail.com',
-          Subject : "New Contact Form",
-          Body :  "Name: " + document.getElementById("name").value
-              + "<br> Email: " + document.getElementById("email").value
-              + "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => alert(message)
-      );
-}
-</script>
-<link rel="icon" href="./Assets/Profile.png" type="image/icon type">
+
+<script async src="//jsfiddle.net/dexterity/q3r6kd0y/embed/result/"></script>
+
+
+<link rel="stylesheet" href="./Assets/Style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
-.w3-third img:hover{opacity: 1}
-</style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
 
+
+<body class="w3-light-grey w3-content" style="max-width:1600px"></body>
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left w3-text-white w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
   <h3 class="w3-padding-64 w3-center"><b>LEGAL<br>STREET<br>STORE</b></h3>
@@ -57,42 +40,17 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:25px"></div>
 
-  
-  
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
+
+
+
+  <h2 class="w3-center">Automatic Slideshow</h2>
+
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides" src="./Assets/PH9.JPG" style="width:100%">
+    <img class="mySlides" src="./Assets/PH7.JPG" style="width:100%">
+    <img class="mySlides" src="./Assets/PH6.JPG" style="width:100%">
   </div>
 
-  
-
- 
-
-<!-- Photo grid -->
-<div class="w3-row" style="max-width:90%;  margin-left: auto; margin-right: auto;">
-  <div class="w3-third">
-    <img src="./Assets/PH9.JPG" style="width:100%" onclick="onClick(this)" alt="1">
-    <img src="./Assets/PH1.JPG" style="width:100%" onclick="onClick(this)" alt="2">
-    <img src="./Assets/PH8.JPG" style="width:100%" onclick="onClick(this)" alt="3">
-  </div>
-
-  <div class="w3-third">
-    <img src="./Assets/PH6.JPG" style="width:100%" onclick="onClick(this)" alt="4">
-    <img src="./Assets/PH3.JPG" style="width:100%" onclick="onClick(this)" alt="5">
-    <img src="./Assets/PH2.JPG" style="width:100%" onclick="onClick(this)" alt="6">
-  </div>
-  
-  <div class="w3-third">
-    <img src="./Assets/PH4.JPG" style="width:100%" onclick="onClick(this)" alt="7">
-    <img src="./Assets/PH7.JPG" style="width:100%" onclick="onClick(this)" alt="8">
-    <img src="./Assets/PH5.JPG" style="width:100%" onclick="onClick(this)" alt="9">
-  </div>
-</div>
 
 
 <!-- Pagination -->
@@ -100,11 +58,70 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-bar">
     <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
     <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+    <a href="#" class="w3-bar-item w3-white w3-button">2</a>
+    <a href="#" class="w3-bar-item w3-white w3-button">3</a>
   
     <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
   </div>
 </div>
 
+
+<!-- Photo grid -->
+<span>
+<div class="container">
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH1.JPG">
+    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH2.JPG">
+    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH8.JPG">
+    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img style="object-fit: cover;" src="../Legalstore/Assets/PH5.JPG">    </div>
+    <div class="content">
+      <div>
+        <h2>Image Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus molestias quidem iusto.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</span>
+
+
+<br><br>
   <!-- Contact section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:700px">
@@ -124,34 +141,78 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         </div>
         <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
       </form>
+
+<br>
+<br>
+
+<div class="rowred">
+  <div class="columnred">
+    <div class="cardred">
+      <img src="./Assets/leg.jpg" alt="Jane" style="width:100%">
+      <div class="containerred">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Some text that describes me</p>
+        <p>example@example.com</p>
+        <br>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
     </div>
   </div>   
 </div>
 
 
-<script>
 
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
-</script>
+<!-- Photo Grid -->
+
+
 
 
 </body>
+<script>
+
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  </script>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  
+  
+  
+  
+    </script>
 </html>
