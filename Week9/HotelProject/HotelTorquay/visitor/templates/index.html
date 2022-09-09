@@ -1,0 +1,17 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+<h1>Hello index page</h1>
+
+<form method="post">
+    {%csrf_token%}
+{% for field in form%}
+    <br>
+    {{field.label_tag}}
+    <br>
+    {{field}}
+    <br>
+{% endfor %}
+    <button type="submit"> Add </button>
+</form>
+
+{%endblock%}

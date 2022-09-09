@@ -1,0 +1,22 @@
+NUMPY
+
+shape = A mxn where m = rows and n= columns
+syntax for bidimensional:
+np.array([(n, n, n), (n, n, n)]) = 
+([n n n]
+ [n n n])
+
+ to ask: ex 9 (how to set to int?), ex20,ex 25 and ex 27: explanation
+
+
+ PANDAS
+ pd.read_csv(link)
+ receives a panda data frame 
+
+functions:
+ group by
+ sorting
+
+ observation = rows
+ variables = columns
+
