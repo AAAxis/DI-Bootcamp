@@ -1,0 +1,26 @@
+#sidebar {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 96vh;
+    width: 20%;
+    float: left;
+    background-color: darkgrey;
+    padding: 5px;
+}
+#main {
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    height: 96vh;
+    background-color: darkgrey;
+    border: 2px red solid;
+    padding: 5px 5px 5px 0;
+}
+#main > * {
+    border: 1px lightgray solid;
+    background-color: white;
+}
+div {
+    display: block;
+}
