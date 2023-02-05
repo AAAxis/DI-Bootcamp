@@ -196,15 +196,21 @@ a:link {
     <h3 class="w3-padding-16 w3-text-light-grey">MY SOFT SKILLS</h3>
   
 
-    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
-var xValues = [ "Leadership", "Teamwork", "Comunication"];
-var yValues = [ 46, 48, 47];
-var barColors = ["red", "green","yellow" ];
+var xValues = ["Leadership", "Teamwork", "Multitasking"];
+var yValues = [55, 49, 44];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
 
 new Chart("myChart", {
-  type: "bar",
+  type: "doughnut",
   data: {
     labels: xValues,
     datasets: [{
@@ -213,7 +219,6 @@ new Chart("myChart", {
     }]
   },
   options: {
-    legend: {display: false},
     title: {
       display: true,
       text: "My Chart"
@@ -221,6 +226,8 @@ new Chart("myChart", {
   }
 });
 </script>
+
+  
 
 
 <br><br>
