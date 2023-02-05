@@ -200,9 +200,9 @@ a:link {
     <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
-var xValues = [ "Leadership", "Teamwork", "Creativity", "Comunication"];
+var xValues = [ "Leadership", "Teamwork", "Comunication"];
 var yValues = [ 43, 53, 41, 45];
-var barColors = ["red", "green","blue","orange","brown"];
+var barColors = ["red", "green","yellow" ];
 
 new Chart("myChart", {
   type: "bar",
@@ -227,21 +227,23 @@ new Chart("myChart", {
 <br><br>
 
     <h3 class="w3-padding-16 w3-text-light-grey">MY HARD SKILLS</h3>
-
+    <div style="display:flex;">
+      <button class="btn default">FLUTTER</button>
+      <button class="btn default">FIREBASE</button>
+      <button class="btn default">MYSQL</button>
+      </div>
+      
 <div style="display:flex; ">
     <button class="btn default">HTML</button>
     <button class="btn default">CSS</button>
 <button class="btn default">PHP</button>
+</div>
+<div style="display:flex; ">
 <button class="btn default">AWS</button>
 <button class="btn default">PYTHON</button>
+<button class="btn default">GITHUB</button>
 </div>
 
-<div style="display:flex;">
-<button class="btn default">GITHUB</button>
-<button class="btn default">FLUTTER</button>
-<button class="btn default">FIREBASE</button>
-<button class="btn default">MYSQL</button>
-</div>
 <br><br><br>
      
     <!-- About Section -->
@@ -256,17 +258,7 @@ new Chart("myChart", {
     <p>Databases on AWS, Amazon S3 Filestore, EC2 and VPC, API GATEWAY</p>
 
     
- 
 
-
-
-
-
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
 
   <!-- Contact Section -->
 
@@ -280,7 +272,14 @@ new Chart("myChart", {
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-large w3-margin-right"> </i>polskoydm@gmail.com</p>
       <p> <i class="fa fa-linkedin fa-fw w3-text-white w3-large w3-margin-right"> </i>  <a href="https://www.linkedin.com/in/dmitry-polskoy-a46103177/">Dmitry Polskoy</a></p>
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-large w3-margin-right"></i> Tel Aviv, Israel</p>
+ 
 
+      <a href="./Assets/dima-polskoy-full-stack.pdf" download>
+        <i class="fa fa-download fa-fw w3-text-white w3-large w3-margin-right"></i> Download Resume
+      </a>
+  
+      
+      
     </div><br>
 
     <p>Let's get in touch. Send me a message:</p>
