@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin:2px;
+  padding: 13px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.default:hover {
+  background: #e7e7e7;
+}
+a:link {
+  text-decoration: none;
+}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+  <a href="https://academyblog.000webhostapp.com/" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-pencil-square-o" style="font-size:48px;color:white"></i>
+    <p>MY BLOG</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="https://academyblog.000webhostapp.com/" class="w3-bar-item w3-button" style="width:25% !important">MY BLOG</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Polskoy Dima</h1>
+    <p>Hello and nice to meet you</p><br>
+    <img src="./Assets/Profile.jpg" alt="boy" class="w3-image" width="400" height="400">
+  </header>
+
+  <!-- About Section -->
+  
+
+
+
+
+
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+	<h2 class="w3-text-light-grey">PROFILE</h2>
+	<hr style="width:200px" class="w3-opacity">
+	<p>My name is Dima. I'm Full-Stack Developer, from Tel Aviv. I have experience in onboarding Hi-Tech projects. Highly organized, commited to using my skills to help others. You can contact me on Hebrew, English, Russian, Ukrainian languages.</p>
+
+
+  
+  <h2 class="w3-text-light-grey">MY PROJECTS</h2>
+	<hr style="width:200px" class="w3-opacity">
+		<h4 style="color:rgb(225, 223, 223)">E-COMMERCE SHOP</h4>
+<li>AWS hosted E-Commerce platform using Python, PostgreSQL with SMTP, file server and Paypal</li>
+<li>Flutter IOS & Android Apps can comunicate with MySql remote database via REST API</li><br>
+<img src="./Assets/img2.png" class="w3-image" width="400" height="400" >
+<br><br>
+  <i style="color:white; margin-right: 2px;" class="fa fa-globe"></i> <a style="color:white; margin-right: 5px;"  href="https://www.wheels.works/">Website</a><br>
+  <i style="color:white; margin-right: 2px;" class="fa fa-folder-o"></i> <a style="color:white; margin-right: 5px;"  href="https://palm-laser-c53.notion.site/Shop-E-Commerce-40c9415d17df49d9aa8bfc45fb6e51f6">Documentation</a><br>
+  <i style="color:white; margin-right: 2px;" class="fa fa-github"></i> <a style="color:white; margin-right: 5px;"  href="https://github.com/AAAxis/Order-Managment">Code Sourse</a><br>
+
+  
+
+<br><br>
+
+
+<hr style="width:200px" class="w3-opacity">
+  <h4 style="color:rgb(225, 223, 223)">MESSANGER, CHAT</h4>
+<li>Web Chat based on Python and Flask Framework, Java Script and Socket IO on Frontend Hosted on Heroku</li>
+<br>
+<img src="./Assets/img1.png" class="w3-image" width="400" height="400" >
+<br><br>
+
+<i style="color:white; margin-right: 2px;" class="fa fa-github"></i> <a style="color:white; margin-right: 5px;"  href="https://github.com/AAAxis/Messenger-Socket-IO">Code Sourse</a><br>
+
+
+
+<br><br>
+
+
+
+
+
+<hr style="width:200px" class="w3-opacity">
+  <h4 style="color:rgb(225, 223, 223)">TRAVEL FACTORY</h4>
+<li>Responsible Designed Cards with contacts information, used technologies HTML, Bootstrap, Vue.js, API Google Maps  </li>
+<br>
+<img src="./Assets/img3.png" class="w3-image" width="400" height="400" >
+<br><br>
+
+<i style="color:white; margin-right: 2px;" class="fa fa-github"></i> <a style="color:white; margin-right: 5px;"  href="https://github.com/AAAxis/Travel-Factory">Code Sourse</a><br>
+
+
+
+<br><br>
+
+
+
+  
+
+ 
+    <h3 class="w3-padding-16 w3-text-light-grey">MY SOFT SKILLS</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Leadership Skills</p>
+    <div class="w3-dark-grey">
+      <div class="w3-white" style="height:28px;width:75%"></div>
+    </div>
+    <p class="w3-wide">Communication Skills</p>
+    <div class="w3-dark-grey">
+      <div class="w3-white" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Multitasking Skills</p>
+    <div class="w3-dark-grey">
+      <div class="w3-white" style="height:28px;width:70%"></div>
+    </div><br>
+
+   
+
+<br><br>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">MY HARD SKILLS</h3>
+    <div style="display:flex;">
+      <button class="btn default">FLUTTER</button>
+      <button class="btn default">FIREBASE</button>
+      <button class="btn default">AWS</button>
+      </div>
+      
+<div style="display:flex; ">
+    <button class="btn default">HTML</button>
+    <button class="btn default">MYSQL</button>
+    <button class="btn default">CSS</button>
+
+</div>
+<div style="display:flex; ">
+  <button class="btn default">PHP</button>
+<button class="btn default">PYTHON</button>
+<button class="btn default">GITHUB</button>
+</div>
+
+<br><br><br>
+     
+    <!-- About Section -->
+
+    <h2 class="w3-text-light-grey">SERTIFICATIONS</h2>
+	<hr style="width:200px" class="w3-opacity">
+	<h4 style="color:rgb(225, 223, 223)">Developers Institute - Full Stack Python Bootcamp</h4>
+    <p>HTML, CSS, Python, Java Script, Bootstrap, Flask, Heroku, PostgreSQL.</p>
+   <h4 style="color:rgb(225, 223, 223)">IT Support Professional Sertificate</h4>
+    <p>Power-shell, Putty CLI, Active Directory, Exchange, Networking TCP/IP.</p>
+   <h4 style="color:rgb(225, 223, 223)">Architecting solutions on AWS</h4>
+    <p>Databases on AWS, Amazon S3 Filestore, EC2 instances and VPC, API GATEWAY</p>
+
+    
+
+
+  <!-- Contact Section -->
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+   
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-large w3-margin-right"></i>+972547337857</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-large w3-margin-right"> </i>polskoydm@gmail.com</p>
+      <p> <i class="fa fa-linkedin fa-fw w3-text-white w3-large w3-margin-right"> </i>  <a href="https://www.linkedin.com/in/dmitry-polskoy-a46103177/">Dmitry Polskoy</a></p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-large w3-margin-right"></i> Tel Aviv, Israel</p>
+ 
+
+      <a href="./Assets/dima-polskoy-full-stack.pdf" download>
+        <i class="fa fa-download fa-fw w3-text-white w3-large w3-margin-right"></i> Download Resume
+      </a>
+  
+      
+      
+    </div><br>
+
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="https://polskoydm.pythonanywhere.com/portfolio" method="GET" target="_self">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="text"></p>
+
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+   
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+
+
+
+
